@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redis Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Link to your CSS file -->
+</head>
+<img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+<body>
+    <div class="container">
+        <h1>Redis Performance Test</h1>
+        <p>Welcome to the Redis performance testing platform. Click the buttons below to measure the data retrieval times.</p>
+
+        <button class="button" onclick="fetchWithoutRedis()">Fetch Without Redis</button>
+        <button class="button" onclick="fetchWithRedis()">Fetch With Redis</button>
+
+        <p id="response">Waiting for data...</p>
+
+        <div class="footer">
+            Developed by <strong>Techtorial Academy DevOps Team</strong>
+            <div class="instructor-signature">Instructor: yct</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
+
